@@ -1,0 +1,17 @@
+---
+layout: post
+title: The Plan
+---
+
+h1. {{ page.title }}
+
+p(meta). 2010-10-07 - Madison Manor
+
+Here is the plan:
+
+#. ThinkUp
+#. OpenBlock
+#. Open311
+#. Crime map
+#. Data catalog
+

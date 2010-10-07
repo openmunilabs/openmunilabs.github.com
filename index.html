@@ -1,0 +1,21 @@
+---
+layout: default
+title: Open Muni Labs blog
+---
+
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <h1>Open Folks</h1>
+  <ul class="posts">
+    <li><a href="http://codeforamerica.org">Code for America:</a> Connecting city governments and Web 2.0 talent.</li>
+    <li><a href="http://openplans.org">Open Plans:</a> OpenPlans informs and engages communities through journalism and open source software.</li>
+    <li><a href="http://expertlabs.org">Expert Labs:</a> Expert Labs is an independent non-profit organization that helps policy makers in our government take advantage of the expertise of their fellow citizens.</li>
+   
+  </ul>
+</div>
