@@ -9,6 +9,43 @@ h1 {
 	font-size:11px;
 }
 
+.openfolks h2 {
+	font: normal normal normal 13px/1.5 'Helvetica Neue', Arial, Helvetica, 'Liberation Sans', FreeSans, sans-serif;
+	font-size:15px;
+	font-weight:bold;
+}
+
+.openfolks {
+	font: normal normal normal 13px/1.5 'Helvetica Neue', Arial, Helvetica, 'Liberation Sans', FreeSans, sans-serif;
+	font-size:11px;
+}
+
+.related h2 {
+	font: normal normal normal 13px/1.5 'Helvetica Neue', Arial, Helvetica, 'Liberation Sans', FreeSans, sans-serif;
+	font-size:15px;
+	font-weight:bold;
+}
+
+
+.header h1
+{
+	font: normal normal normal 13px/1.5 'Helvetica Neue', Arial, Helvetica, 'Liberation Sans', FreeSans, sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.header h1 a {
+  color: black;
+}
+
+.header h1 a:hover {
+  color: black;
+}
+
+.header h1 a:visited {
+  color: black;
+}
+
 .footer{
 	font: normal normal normal 13px/1.5 'Helvetica Neue', Arial, Helvetica, 'Liberation Sans', FreeSans, sans-serif;
 	font-size:11px;

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The Plan
+disqus: 2010-10-07-first-one
 ---
 
 Lorem ipsum sea malorum meliore consequat ex, cu mutat laudem sea. Nam ut civibus expetenda. Pri eu commodo nominavi apeirian, ea cum mentitum scriptorem. Vim tale falli te, quis munere labitur ius ex. Choro platonem nec ex. Ludus platonem cum eu, homero essent eam ad, vis vidit impedit te.

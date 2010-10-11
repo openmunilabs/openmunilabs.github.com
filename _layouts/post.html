@@ -1,37 +1,85 @@
 ---
 layout: default
 ---
-<div id="post">
-  <h2><a href="{{ page.url }}">
-    {{ page.title }}
-  </a></h2>
-  <div id="date">published {{ page.date | date_to_string }}</div>
-  {{ content }}
-  <hr />
 
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-  /**
-    * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
-    */
-   var disqus_identifier="post";
-  (function() {
-   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-   dsq.src = 'http://openmunilabsblog.disqus.com/embed.js';
-   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=openmunilabsblog">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+<div class="grid_12">
+	<div class="grid_2 alpha">
+		<p>
+			
+		</p>
+	</div>
+	<div class="grid_8">
+		<p>
 
+			<div id="post">
+			  <h2><a href="{{ page.url }}">
+			    {{ page.title }}
+			  </a></h2>
+			  <div id="date">published {{ page.date | date_to_string }}</div>
+			</div>
+		</p>
+	</div>
+	<div class="grid_2 omega related">
+		<p/>
+	</div>
+</div>
+
+	<div class="clear"></div>
+
+<div class="grid_12">
+	<div class="grid_2 alpha">
+		<p>
+			
+		</p>
+	</div>
+	<div class="grid_8">
+		<p>
+
+			<div id="post">
+			  {{ content }}
+			  <hr />
+
+			<div id="disqus_thread"></div>
+			<script type="text/javascript">
+			  /**
+			    * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
+			    */
+			   
+			  (function() {
+			   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			   dsq.src = 'http://openmunilabsblog.disqus.com/embed.js';
+			   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			  })();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=openmunilabsblog">comments powered by Disqus.</a></noscript>
+			<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+			</div>
+
+
+			
+		</p>
+	</div>
+	<div class="grid_2 omega related">
+		  <h2>Related Posts</h2>
+			<br/>
+		  <ul class="posts">
+		    {% for post in site.related_posts limit:3 %}
+		      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+		    {% endfor %}
+		  </ul>
+	</div>
+
+	<div class="clear"></div>
 </div>
 
 
-<div id="related">
-  <h2>Related Posts</h2>
-  <ul class="posts">
-    {% for post in site.related_posts limit:3 %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+
+
+
+
+
+
+
+
+

@@ -3,20 +3,73 @@ layout: default
 title: Our Blog
 ---
 
-{% assign first_post = site.posts.first %}
-<div id="post">
-  {{ first_post.content }}
-  <a id="more" href="{{ first_post.url }}#disqus">Comments &raquo;</a>
+
+<div class="grid_12">
+	<div class="grid_2 alpha">
+		<p>
+		</p>
+	</div>
+	<div class="grid_8">
+		<p>
+			{% assign first_post = site.posts.first %}
+			<div id="post">
+			  <h2><a href="{{ first_post.url }}">
+			    {{ first_post.title }}
+			  </a></h2>
+			</div>
+		</p>
+	</div>
+	<div class="grid_2 omega">
+	  <p></p>
+	</div>
+
+	<div class="clear"></div>
 </div>
 
-<br/>
-<br/>
+<div class="clear"></div>
 
-<div id="home">
-  <b>Blog Posts</b>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+
+<div class="grid_12">
+	<div class="grid_2 alpha">
+		<p>
+			
+		</p>
+	</div>
+	<div class="grid_8">
+		<p>
+
+
+			{% assign first_post = site.posts.first %}
+			<div id="post">
+			  {{ first_post.content | truncate:450 }}
+			  <br/>
+			  <a id="more" href="{{ first_post.url }}">Read More &raquo;</a>
+			  <a id="more" href="{{ first_post.url }}#disqus_thread">Comments &raquo;</a>
+			</div>
+			
+			<br/>
+			<br/>
+
+			<div id="home">
+			  <b>Blog Posts</b>
+			  <ul class="posts">
+			    {% for post in site.posts %}
+			      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+			    {% endfor %}
+			  </ul>
+			</div>
+
+			
+		</p>
+	</div>
+	<div class="grid_2 omega openfolks">
+	  <h2>Open Folks</h2> 
+		<br/>
+	  <a href="http://codeforamerica.org">Code for America:</a><br/> Connecting city governments and Web 2.0 talent.<br/> 
+	  <a href="http://openplans.org">Open Plans:</a><br/>We make cities work better.<br/> 
+	  <a href="http://expertlabs.org">Expert Labs:</a><br/>Better Technology. Better Answers. Better Government.<br/> 
+	</div>
+
+	<div class="clear"></div>
 </div>
+
